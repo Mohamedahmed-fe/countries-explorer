@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.country-card{
+    border: 2px solid lightgray;
+    padding: 16px;
+    width: 250px;
+}
+.country-card img{
+    max-width: 100%;
+}
+
+.countries{
+    display: flex;
+    gap: 16px;
+}
