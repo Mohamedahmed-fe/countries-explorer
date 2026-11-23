@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
@@ -27,12 +31,33 @@
     <main>
         <section>
             <h2>Countries</h2>
-            <article>
+          <div class="countries">
+
+              <article class="country-card">
                 <img src="https://flagcdn.com/w320/eg.png" alt="Flag of Egypt">
+                <span class ="badge">Africa</span>
                 <h3>Egypt</h3>
-                <p>Capital: Cairo</p>
+                <p>Capital: <span>Cairo</span></p>
                 <p>Population: 110, 000, 000</p>
             </article>
+
+             <article class="country-card">
+                <img src="https://flagcdn.com/w320/de.png" alt="Flag of Germany">
+                <h3>Germany</h3>
+                <p>Capital: Berlin</p>
+                <p>Population: 83, 000, 000</p>
+            </article>
+
+             <article class="country-card">
+                <img src="https://flagcdn.com/w320/us.png" alt="Flag of United States">
+                <h3>United States</h3>
+                <p>Capital: Washington, D.C.</p>
+                <p>Population: 331, 000, 000</p>
+            </article>
+
+
+            
+          </div>
         </section>
     </main>
 

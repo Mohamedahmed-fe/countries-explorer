@@ -1,0 +1,127 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: whitesmoke;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1, h2, h3 {
+  color: darkslategray;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+span {
+  color: crimson;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+/* ===== Layout ===== */
+header {
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+/* ===== Components: Country Card ===== */
+.country-card {
+  border: 2px solid lightgray;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.country-card img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.country-card h3 {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+
+.badge {
+  background-color: gold;
+  padding: 4px 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+/* ===== Components: Form ===== */
+#search {
+  width: 220px;
+}
+
+input, select {
+  padding: 8px 12px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+/* ===== States (hover / focus) ===== */
+.country-card:hover {
+  border-color: steelblue;
+  transform: translateY(-6px) scale(1.03);
+}
+
+
+
+input:focus, select:focus {
+  outline: none;
+  border-color: steelblue;
+}
+
+/* ===== Responsive (must stay at the end) ===== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  header {
+    position: static;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
