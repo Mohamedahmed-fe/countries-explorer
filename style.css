@@ -66,14 +66,6 @@ header {
   text-transform: capitalize;
 }
 
-/* .country-card:nth-child(2) {
-    background-color: lightblue;
-} */
-
-/* .country-card h3::after {
-  content: " →";
-  color: steelblue;
-} */
 
 .badge {
   background-color: gold;
@@ -101,17 +93,14 @@ input, select {
   transform: translateY(-6px) scale(1.03);
 }
 
-/* .country-card :hover {
-  color: red;
-} */
+
 
 input:focus, select:focus {
   outline: none;
   border-color: steelblue;
-  /* box-shadow:0 0 0 1px rgba(70,130,180,0.25); */
 }
 
-/* ===== Responsive (لازم يفضل في الآخر) ===== */
+/* ===== Responsive (must stay at the end) ===== */
 @media (max-width: 600px) {
   h1 {
     font-size: 1.5rem;
@@ -136,8 +125,3 @@ input:focus, select:focus {
   }
 }
 
-/* @media (min-width: 600px) and (max-width: 900px) {
-  h1 {
-    color: crimson;
-  }
-} */
